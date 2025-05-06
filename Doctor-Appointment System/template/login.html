@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> -->
+    <style>
+        *{
+    box-sizing: border-box;
+    
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    background-color: #2e7d5c;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.container{
+    background: #fff;
+    width: 450px;
+    box-shadow: 0px 15px 20px ;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 100px;
+}
+img{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: left;
+    margin-top: 1px;
+    margin-left: 30px;
+}
+h1{ 
+    text-align: center;
+    color: #2e7d5c;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 35px;
+    
+}
+.field{
+    height: 50px;
+    width: 390px;
+    margin: 20px 20px 10px 20px; 
+    padding: 1px;
+    border-radius: 20px;
+    justify-content: center;
+    display: flex;
+}
+.field input{
+    height: 100%;
+    padding-left: 15px;
+    font-size: 17px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    font-weight: 100;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    margin-left: 10px;
+   
+
+}
+input[type="text"],input[type="password"]{
+    width: 300px;
+    transition: border-bottom 0.1s ease-out;
+    display: flex;
+}
+
+input[type="text"]:hover,:focus{
+    border:2px solid #2e7d5c;
+    outline: none;
+    
+}
+
+input[type="password"]:hover,:focus{
+    border:2px solid #2e7d5c;
+    outline: none;
+
+}
+button[type="submit" ]{
+         margin-top: 40px;
+        height: 50px;
+        width: 300px;
+        border-radius: 10px;
+        justify-content: center;
+        color: #fff;
+        background-color:#2e7d5c;
+        border:#2e7d5c;
+        font-size: medium;
+        transition: background-color 0.3s ease, color 0.3s ease;    
+    }
+button[type="submit" ]:hover{
+    background-color: white;
+    border: 2px solid #2e7d5c;
+    color: #2e7d5c;
+} 
+.button{
+    text-align: center;
+}
+p{
+    text-align: center;
+    padding: 3px;
+}
+p a:hover{
+    color:#2e7d5c;
+}
+.box{
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        <img src="/static/images/logo1.png" alt="logo">
+        <h1>Login</h1>
+    </div>
+        <form method="POST">
+            <div class="field">
+            <input type="text" name="username" placeholder="Username" required>
+        </div>
+            <div class="field">
+            <input type="password" name="password" placeholder="Password" required>
+        </div>
+        <div class="button">
+            <button type="submit">Login</button>
+        </div>
+        </form>
+        <p>Don't have an account? <a href="{{ url_for('register') }}">Register</a></p>
+    </div>
+</body>
+</html>
