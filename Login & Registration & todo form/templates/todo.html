@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+
+    <link rel="stylesheet" href="static\css\todo.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        *{
+            margin-top: 20px;
+            box-sizing: border-box;
+            font-family: 'poppins', 'sans-serif';
+            place-items: center;
+        }
+
+        .container{
+            border: 3px solid white;
+            margin-top: 50px;
+            background: #fff;
+            max-width: 450px;
+            box-shadow: 0px 15px 20px ;
+            border-radius: 5px;
+            padding: 25px;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        body{
+            background: -webkit-linear-gradient(left,#a445b2, #fa4299);
+        }
+
+        h2{
+            text-align: center;
+            font-size:xx-large;
+        }
+
+        .box{
+            margin: 10px;
+            padding: 5px;
+        }
+
+        form{
+            font-size: 20px;
+        }
+
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 15px;
+    
+        }
+
+        input[type="submit"]{
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid#fa4299;
+            background: #fa4299;
+            color:#fff;
+            font-size: large;
+        }
+
+        input[type="submit"]:hover{
+            background-color: #a445b2;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        <h2>To do list</h2>
+        <form>
+            <input type="checkbox" id="list" name="list">
+            <label for="list">Entered first and last name</label>
+            <br>
+            <input type="checkbox" id="list" name="list">
+            <label for="list">Entered Valid Phone number</label>
+            <br>
+            <input type="checkbox" id="list" name="list">
+            <label for="list"> Entered Valid Email Address</label>
+            <br>
+            <input type="checkbox" id="list" name="list">
+            <label for="list">Entered Valid Personal information </label><br>
+            <input type="checkbox" id="list" name="list">
+            <label for="list"> I accept all <a href="#"> Terms and conditions</a></label>
+            <br>
+
+            <input type="submit" value="Submit" <a href="/login"></a>
+
+               </form>
+               
+            </div>
+            
+    </div>
+    
+</body>
+</html>

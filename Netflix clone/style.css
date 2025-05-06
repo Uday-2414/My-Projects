@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: black;
+
+}
+
+.container {
+    position: relative;
+}
+
+.main {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.main img {
+    height: 80px;
+    margin-left: 40px;
+    justify-content: flex-start;
+    filter: brightness(0.1) saturate(1630%) hue-rotate(360deg);
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+
+}
+
+.btn {
+    margin-right: 30px;
+    padding: 20px;
+    top: 0;
+    z-index: 2;
+
+}
+
+.btn button {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 100px;
+    width: 80px;
+    font-weight:400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid rgb(88, 83, 83);
+    color: white;
+    background: transparent;
+    overflow: hidden;
+
+}
+.btn button:nth-child(2){
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.box {}
+
+.cover {
+    width: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border-left: 3px solid rgba(255, 255, 255, 0.053); 
+    border-top: 3px solid rgba(255, 255, 255, 0.241); */
+    height: 70vh;
+    margin: auto;
+    border-radius: 15px;
+    box-sizing: border-box;
+    position: relative;
+    
+    z-index: 1;
+    box-shadow: 4px 4px 100px rgb(49, 14, 14),
+        8px 8px 100px rgb(59, 51, 51),
+        12px 12px 100px rgb(118, 38, 38);
+
+        
+}
+
+.cover::before {
+    content: '';
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/Assets/background.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.4;
+    z-index: -1;
+    box-shadow: inset 4px 4px 100px rgb(18, 16, 16,0.9);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    z-index: 1;
+}
+
+.content span:first-child {
+    font-size: 56px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    line-height: 70px;
+}
+
+.content span:nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    line-height: normal;
+}
+
+.content span:nth-child(3) {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    line-height: 24px;
+}
+
+.content span {
+    padding: 13px;
+}
+
+.email-add {
+    padding: 10px;
+}
+
+.email-add input[type="email"] {
+    border-radius: 30px;
+    padding: 15px;
+    line-height: 24px;
+    font-size: 1rem;
+    background-color: rgba(107, 106, 106, 0.784);
+    color: white;
+    width: 19vw;
+    border: 1px solid rgba(177, 177, 177, 0.327);
+    min-width: 15px;
+    text-align: left;
+
+}
+
+.email-add input[type="email"]::placeholder {
+    color:rgba(255, 255, 255, 0.7);
+    opacity: 1;
+}
+
+.email-add input[type="submit"] {
+    border-radius: 100px;
+    padding: 15px;
+    line-height: 24px;
+    font-size: 24px;
+    background-color: rgb(229, 9, 20);
+    color: white;
+    width: 15vw;
+    border: 1px solid rgb(229, 9, 20);
+    min-width: 15px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.slides{
+    margin-top: 50px;
+}
+.trending p{
+    font-size: 60px;
+    color: rgb(164, 158, 158);
+    margin-left: 100px;
+    font-size: 32px;
+    font-weight: 750;
+    line-height: normal;
+}
+.trending-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.movie-item {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+}
+
+.movie-img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.movie-img:hover {
+    transform: scale(1.05);
+}
+
+.rank-number {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    color: white;  
+    font-size: 50px;  
+    font-weight: bold; 
+    z-index: 10;  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+}
+
+.information{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    overflow-x: auto;
+    padding: 10px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.info-1{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    height: 170px;
+    width: 280px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    background:linear-gradient(135deg,rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+}
+.info-1 span{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: normal;
+    color: white;
+    margin: 3px;
+    
+}
+.info-1 p{
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    line-height:normal;
+    margin: 5px;
+}
+.info-1 img{
+    position: absolute;
+    height: 40px;
+    width: px;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    
+}
+.trending span{
+    font-size: 60px;
+    color: #fff;
+    margin-left: 100px;
+    font-size: 32px;
+    font-weight: 750;
+    line-height: normal;
+}
+.questions{
+    margin: auto; 
+}
+.questions .ques{
+    border: 1px solid grey;
+    width: 85%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 100px 10px 100px; 
+    border: 1px solid grey;
+    border-radius: 20px;
+    background:linear-gradient(135deg,rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(100px);
+    transition: transform 0.3s ease;
+}
+.questions .ques:hover{
+    transform: scale(1.02);
+}
+.ques > span{
+   
+    border-radius: 10px;
+    padding: 20px;
+    height: 30px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    
+}
+.sign-up{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 40px;
+        padding: 30px;
+    }
+
+.sign-up> .email-add{
+    padding:10px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    
+}
+table ,td , tr{
+    color: #fff;
+    border-spacing: 30px;
+
+}
+td{
+    text-decoration: underline;
+    font-weight: 300;
+    width: 100px;
+}
+
+
